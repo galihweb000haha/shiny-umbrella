@@ -1,0 +1,19 @@
+<h1>Login Form</h1>
+<form method="post" action="/login">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+    <label for="username">Username</label>
+    <input type="text" name="username" value="">
+    <label for="password">Password</label>
+    <input type="password" name="password" value="">
+    <input type="submit" name="submit" value="Submit">
+</form>
+
+<!-- <script type="text/javascript">
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'http://127.0.0.1:5000', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+        username: 'galih',
+        password: 'galih'
+    }));
+</script> -->
